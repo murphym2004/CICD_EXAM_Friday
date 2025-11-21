@@ -50,7 +50,7 @@ public class PersonController {
     }
 @PutMapping("/update Quantity")
    public ResponseEntity<Person> UpdateQuantity(@RequestBody Person person){
-       Optional<Person>maybe = Service.findById(String Ticket);
+       Optional<Person>maybe = Service.findById("Quantity");
         if (maybe.isPresent()){
             Person update = maybe.get();
             Service.update(update);

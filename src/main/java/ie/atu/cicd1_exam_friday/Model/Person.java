@@ -20,6 +20,39 @@ public class Person {
        private  String AttendeeEmail;
         @Pattern(regexp = "TK-[0-9]{4}")
         private  String TicketCode;
+
+        public Integer getQuantity() {
+            return Quantity;
+        }
+
+        public void setQuantity(Integer quantity) {
+            Quantity = quantity;
+        }
+
+        public String getAttendeeName() {
+            return AttendeeName;
+        }
+
+        public void setAttendeeName(String attendeeName) {
+            AttendeeName = attendeeName;
+        }
+
+        public String getAttendeeEmail() {
+            return AttendeeEmail;
+        }
+
+        public void setAttendeeEmail(String attendeeEmail) {
+            AttendeeEmail = attendeeEmail;
+        }
+
+        public String getTicketCode() {
+            return TicketCode;
+        }
+
+        public void setTicketCode(String ticketCode) {
+            TicketCode = ticketCode;
+        }
+
         @Positive
         private Integer Quantity;
     }
